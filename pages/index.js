@@ -2,6 +2,8 @@ import { Page, Layout, EmptyState } from "@shopify/polaris";
 import { TitleBar, ResourcePicker } from "@shopify/app-bridge-react";
 import store from "store-js";
 import ResourceListWithProducts from "../components/ResourceList";
+import IceCreamPicker from "../components/IceCreamPicker";
+import PriceCalculator from "../components/priceCalculator";
 
 class Index extends React.Component {
   state = { open: false };
@@ -16,7 +18,7 @@ class Index extends React.Component {
   render() {
     const emptyState = !store.get("ids");
     return (
-      <Page>
+      <Page fullWidth>
         <TitleBar
           title="Sample App"
           primaryAction={{
@@ -31,20 +33,12 @@ class Index extends React.Component {
         />
         {emptyState ? (
           <Layout>
-            <EmptyState
-              heading="Discount your products temporarily"
-              action={{
-                content: "Select Products",
-                onAction: () => this.setState({ open: true }),
-              }}
-              secondaryAction={{
-                content: "Learn more",
-                url: "https://help.shopify.com",
-              }}
-              image="https://cdn.shopify.com/s/files/1/0757/9955/files/empty-state.svg"
-            >
-              <p>Track and receive your incoming inventory from suppliers.</p>
-            </EmptyState>
+            <Layout.Section>
+              <IceCreamPicker />
+            </Layout.Section>
+            <Layout.Section secondary>
+              <PriceCalculator />
+            </Layout.Section>
           </Layout>
         ) : (
           <ResourceListWithProducts />

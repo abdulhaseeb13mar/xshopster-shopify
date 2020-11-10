@@ -1,0 +1,144 @@
+.IcePicker-main-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.IcePicker-card-div {
+  width: 200px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.IcePicker-card-heading {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.IcePicker-card-description {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 15px;
+  flex: 1;
+}
+
+.IcePicker-main-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.IcePicker-card-controller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.IcePicker-Insert-Btn {
+  width: 50px;
+  height: 50px;
+  background-color: #ed5b24;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 50%;
+  margin: 0px 13px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.IcePicker-Insert-plus {
+  margin-top: -5px;
+}
+
+.IcePicker-less-Btn,
+.IcePicker-Add-Btn {
+  width: 24px;
+  height: 24px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.PC-calculation-div {
+  background-color: black;
+  padding: 30px;
+}
+
+.PC-calculation-heading {
+  font-size: 37px;
+  font-weight: bold;
+  line-height: 1.16;
+  font-stretch: normal;
+}
+
+.PC-calculation-heading2 h5 {
+  font-size: 13px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin-top: 15px;
+}
+
+.PC-calculation-options-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.PC-options-div {
+  display: flex;
+  align-items: center;
+}
+
+.PC-options {
+  padding: 14px 17px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 7px;
+  font-weight: bold;
+}
+
+.PC-Price {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.PC-items-div {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.PC-item {
+  width: 80px;
+  height: 80px;
+  border: dashed 1px black;
+  border-radius: 50%;
+  margin: 0px auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.PC-main-div {
+  color: white !important;
+}
